@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul li{
+	list-style: none;
+}
+
+body{
+background: #fc4a1a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container{
+	height: 70vh;
+	width: 20vw;
+	background-color: #f1f1f1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 5%;
+
+}
+
+.header{
+	background: url('images/cloud.png');
+	height: 40%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+}
+
+h4{
+	text-align: center;
+	margin-top: 30px;
+	color: navy;
+}
+
+.add-todo{
+	position: absolute;
+	bottom: 5%;
+	left: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#input{
+	padding: 6px 3px;
+	outline: none;
+	border: none;
+	flex: 2;
+}
+
+.add-todo i{
+	font-size: 35px;
+	flex: 1;
+
+	color: orange;
+}
+
+.todo-container{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform:translateX(-50%);
+	height: 240px;
+
+
+}
+
+.todo{
+	margin: 0.5rem;
+	padding: 10px 5px;
+	background-color: #fff;
+	color: black;
+	border: 1px solid #f1f1f1;
+	height: 40px;
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.todo li{
+	flex: 1;
+}
+
+.completed{
+	text-decoration: line-through;
+	color: #c3c3c3;
+
+}
+
+
+.complete-btn{
+	background-color: rgb(75, 161, 75);
+	color: #fff;
+	outline: none;
+	border: none;
+	padding: 6px 7px;
+}
+
+.trash-btn{
+	background-color: rgb(253, 62, 62);
+	outline: none;
+	border: none;
+	padding: 6px 7px;
+	margin-left: 15px;
+}
